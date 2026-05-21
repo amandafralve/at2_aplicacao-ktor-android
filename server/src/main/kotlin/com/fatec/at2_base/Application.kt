@@ -3,6 +3,7 @@ package com.fatec.at2_base
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
+import io.ktor.server.request.receiveText
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
@@ -13,8 +14,12 @@ fun main() {
 
 fun Application.module() {
     routing {
-        get("/") {
-            call.respondText("Ktor: ${Greeting().greet()}")
+        get("/hello") {
+            call.respondText("Olá! ${Greeting().greet()}")
+        }
+
+        post("/echo") {
+            call.respondText(call.receiveText())
         }
     }
 }
