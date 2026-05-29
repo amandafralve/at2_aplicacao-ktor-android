@@ -15,10 +15,10 @@ import io.ktor.server.routing.*
 import kotlinx.serialization.json.Json
 
 val plantas = mutableListOf(
-    Planta(1, "Samambaia",     "Nephrolepis exaltata", "baixa",  2),
-    Planta(2, "Suculenta Rosa","Echeveria elegans",    "alta",  14),
-    Planta(3, "Monstera",      "Monstera deliciosa",   "média",  7),
-    Planta(4, "Girassol", "Helianthus annuus", "alta", 3),
+    Planta(1, "Samambaia",     "Nephrolepis exaltata", "Meia Sombra",  2),
+    Planta(2, "Suculenta Rosa","Echeveria elegans",    "Sol Pleno",  14),
+    Planta(3, "Monstera",      "Monstera deliciosa",   "Meia Sombra",  7),
+    Planta(4, "Girassol", "Helianthus annuus", "Sol Pleno", 3),
 )
 var proximoId = 5
 
