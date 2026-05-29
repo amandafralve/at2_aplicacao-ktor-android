@@ -7,4 +7,4 @@ class AndroidPlatform : Platform {
 }
 
 actual fun getPlatform(): Platform = AndroidPlatform()
-actual fun serverHost(): String = "10.67.57.100"  // Substituir pelo IP do notebook
+actual fun serverHost(): String = "10.0.2.2"  // Substituir pelo IP do notebook
